@@ -1,0 +1,133 @@
+/* Css reset (doin it bcuz of padding)*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    /* This font is imported from google fonts */
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+/* ------- Responsiveness ------- */
+/* For mobile phones
+desktop class will not be displayed
+*/
+.desktop {
+    display: none;
+}
+
+/* For large screens 
+desktop class will be displayed
+*/
+@media(min-width:1200px) {
+    .desktop {
+        display: initial;
+    }
+}
+
+/* ------- Header Css ------- */
+header {
+    display: grid;
+    /* For aligning header elements in a row, check: a.logo */
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    /* To make header sticky at the top */
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+header a {
+    color: inherit;
+}
+
+header nav a {
+    text-decoration: none;
+    /*top-bottom sides*/
+    padding: 5px 10px;
+
+}
+
+header nav.center {
+    text-align: center;
+}
+
+header nav.right {
+    text-align: right;
+}
+
+/*------- Sections Css ------- */
+section {
+    height: 100vh;
+    background-size: cover;
+    /* top-bottom sides */
+    background-position: center center;
+}
+
+section .content {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+section h1 {
+    font-size: 3rem;
+}
+
+section a {
+    color: inherit;
+}
+
+section .buttons a,
+section .buttonLast a {
+    display: block;
+    background-color: #eee;
+    /* inherited color is black */
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+section .buttons a:first-child,
+section .buttonLast a {
+    /* background-color: #444; */
+    background-color: black;
+    color: #fff;
+}
+
+section .buttons {
+    display: grid;
+    row-gap: 20px;
+    margin: 0 40px;
+}
+
+section .buttonLast {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 270px
+}
+
+@media (min-width: 768px) {
+    section .buttons {
+        max-width: 648px;
+        /* in center */
+        margin: 0 auto;
+        /* to allign them in a line */
+        grid-template-columns: 1fr 1fr;
+        /* gap b/w buttons */
+        column-gap: 20px;
+    }
+}

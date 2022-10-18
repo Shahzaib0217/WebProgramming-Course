@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(bb.jpeg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600px;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-tour-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.tour-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.tour-input-textarea {
+    padding: 10px 0;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    overflow: auto;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+.tour-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.tour-input-box p {
+    width: 95%;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.tour-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.day-title,
+.guide-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    border-bottom: 1px solid white;
+}
+
+.day-category,
+.guide-select {
+    margin: 8px 0;
+    color: white;
+}
+
+.day-category label,
+.guide-select label {
+    padding: 0 20px 0 5px;
+}
+
+.day-category label,
+.day-category input,
+.form-submit-btn input {
+    cursor: pointer;
+}
+
+/* Submit Button */
+.form-submit-btn button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn button:hover {
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}

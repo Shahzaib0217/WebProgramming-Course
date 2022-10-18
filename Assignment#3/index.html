@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="app.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body background="clouds.jpeg">
+    <h3 style="padding: 10px;">Shahzaib's Weather App</h3>
+    <center style="padding: 70px;">
+        <label for="Forcast" style="font-size:17px; font-weight:bold;"> Enter City
+            Name</label>
+        <input type="text" id="name">
+        <input type="button" value="Forcast" id="Forcast" class="btn btn-success" onclick="getData()">
+        <div class="card" style="width:400px; min-width: 400px; margin-top: 7px;">
+            <div id="weatherInfo">
+                Weather info
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
